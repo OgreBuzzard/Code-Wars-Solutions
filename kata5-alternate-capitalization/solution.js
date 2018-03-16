@@ -1,15 +1,17 @@
-function capitalize(s){
-    let sArray = s.split('');
-    let sEvens = [];
-    let sOdds = [];
-    sArray.forEach(function(letter, i) {
-      if (i % 2 == 0) {
-        sEvens.push(letter.toUpperCase())
-        sOdds.push(letter)
-      } else {
-      sEvens.push(letter);
-      sOdds.push(letter.toUpperCase())
-      }
-    })
-    return [sEvens.join(''), sOdds.join('')];
-  };
+function checkExam(array1, array2) {
+  let score = 0;
+  for(let i = 0; i < array1.length; i++) {
+    if(array1[i] === array2[i]) {
+      score = (score + 4);
+    } else if(array2[i] === '') {
+      score;
+    } else if(array1[i] !== array2[i]) {
+      score--;
+    }
+  }
+  if(score > 0) {
+  return score;
+  } else { 
+    return 0;
+  }
+}
