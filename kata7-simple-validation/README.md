@@ -1,8 +1,13 @@
-Write a simple regex to validate a username. Allowed characters are:
+A Nice array is defined to be an array where for every value n in the array, there is also an element n-1 or n+1 in the array.
 
-lowercase letters,
-numbers,
-underscore
-Length should be between 4 and 16 characters (both included).
+example:
 
-https://www.codewars.com/kata/simple-validation-of-a-username-with-regex
+[2,10,9,3] is Nice array because
+
+2=3-1
+10=9+1
+3=2+1
+9=10-1
+Write a function named isNice/IsNice that returns true if its array argument is a Nice array, else false. You should also return false if input array has no elements.
+
+https://www.codewars.com/kata/nice-array/train/javascript
